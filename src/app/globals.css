@@ -79,6 +79,12 @@ body{
   -webkit-text-stroke: 3px transparent;
 }
 
+.auth{
+  background: linear-gradient(180deg, #0B1017 0%, rgba(11, 16, 23, 0.1) 15.31%, rgba(11, 16, 23, 0) 100%),  url('../assets/img/auth_bg.png');
+  background-size: cover;
+  background-position-x: 85%;
+  background-repeat: no-repeat;
+}
 .auth-gradient{
   background: url('../assets/img/auth_gradient.png') ;
   display: grid;

@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
             <div className="flex-1 w-full">
               <div className="">
-                <h1 className='text-gradient-outline md:text-[40px] text-[28px] text-white'>NEWSLETTER</h1>
+                <h1 className='text-gradient-outline md:text-[40px] text-[28px] text-white font-extrabold'>NEWSLETTER</h1>
               </div>
               <div className="flex flex-col md:gap-8 gap-5 w-full mt-4">
                 <input placeholder='Enter your Email' type='text' className='rounded-[6px] bg-[#252F3D] text-[#cecece] p-3 w-full' />
