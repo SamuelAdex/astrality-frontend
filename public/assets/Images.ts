@@ -27,7 +27,7 @@ import Twitter from './img/twitter.png';
 import Instagram from './img/youtube.png';
 import linkedIn from './img/linkedIn.png';
 import Master from './img/master.png';
-import Klarna from './img/Klarna.png';
+import Klarna from './img/klarna.png';
 import ShopPay from './img/shop-pay.png';
 import AmericaExpress from './img/express.png';
 import Opensea from './img/opensea.png';
