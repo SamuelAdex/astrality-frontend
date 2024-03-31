@@ -2,13 +2,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import Excludeline from '../../../public/assets/img/Exclude.png'
-import Telegram from '../../../public/assets/img/telegram.png'
-import Discord from '../../../public/assets/img/discord.png';
-import Facebook from '../../../public/assets/img/facebook (2).png';
-import Twitter from '../../../public/assets/img/twitter.png';
-import Instagram from '../../../public/assets/img/youtube.png';
-import linkedIn from '../../../public/assets/img/linkedIn.png';
+import {
+  Excludeline,
+    Telegram,
+    Discord,
+    Facebook,
+    Twitter,
+    Instagram,
+    linkedIn,
+} from '../../../public/assets/Images'
 import Button from '../elements/Button'
 
 
