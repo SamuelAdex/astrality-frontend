@@ -2,7 +2,13 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 
-const GradientText = ({children, style}) => {
+
+interface TextProps{
+  children: any;
+  style?: String;
+}
+
+const GradientText = ({children, style}: TextProps) => {
   return (
     <div className={`gradient-text ${style} bg-gradient-to-r from-[#22A1FE] font-bold to-[#FD18EF] inline-block text-transparent bg-clip-text`}>{children}</div>
   )
