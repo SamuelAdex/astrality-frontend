@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+body{
+  background-color: #000000;
+}
+
+.hero{
+  background: url('../assets/img/AST_City.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.join{
+  background: url('../assets/svg/join_bg.svg');
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.buy-now{
+  background: linear-gradient(291.95deg, #000000 0.57%, rgba(0, 0, 0, 0) 73.9%), url('../assets/svg/AST_Chip.svg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.marketplace{
+  background: url('../assets/img/marketplace_bg.png');
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+/* .market_gradient{
+  background: linear-gradient(291.95deg, #000000 0.57%, rgba(0, 0, 0, 0) 73.9%), url('./assets/svg/AST_MarketPlace.svg') ;
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+.metaverse{
+  background: linear-gradient(291.95deg, #000000 0.57%, rgba(0, 0, 0, 0) 73.9%), url('../assets/svg/AST_Brain_v1.svg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.advert{
+  background: url('../assets/img/AST_Brands.png');
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+
+.rewards{
+  background:  linear-gradient(291.95deg, #000000 0.57%, rgba(0, 0, 0, 0) 73.9%), url('../assets/img/AST_Stars_v2.png');
+  background-size: 70%;
+  background-position-x: 100%;
+  background-repeat: no-repeat;
+}
+.text-gradient-outline {
+  background: linear-gradient(180deg, #4FB1F6 0%, #FB18EE 100%);
+  /* background: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7); */
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+}
+
+.auth-gradient{
+  background: url('../assets/img/auth_gradient.png') ;
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (min-width: 300px) and (max-width: 791px){
+  .rewards{
+    background-size: 100%;
+  }
+  .advert{
+    background-size: 100%;
+  }
+}
