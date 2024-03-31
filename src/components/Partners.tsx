@@ -2,17 +2,17 @@
 
 import Image from 'next/image';
 import React from 'react'
-import Master from '../assets/img/master.png';
-import Klarna from '../assets/img/Klarna.png';
-import ShopPay from '../assets/img/shop-pay.png';
-import AmericaExpress from '../assets/img/express.png';
-import Opensea from '../assets/img/opensea.png';
-import Paypal from '../assets/img/paypal.png';
-import Square from '../assets/img/square.png';
-import Eth from '../assets/img/eth.png';
-import Alipay from '../assets/img/alipay.png';
-import Metamask from '../assets/img/metamask.png';
-import UnderlineImg from '../assets/img/Vector 4.png'
+import Master from '../../public/assets/img/master.png';
+import Klarna from '../../public/assets/img/Klarna.png';
+import ShopPay from '../../public/assets/img/shop-pay.png';
+import AmericaExpress from '../../public/assets/img/express.png';
+import Opensea from '../../public/assets/img/opensea.png';
+import Paypal from '../../public/assets/img/paypal.png';
+import Square from '../../public/assets/img/square.png';
+import Eth from '../../public/assets/img/eth.png';
+import Alipay from '../../public/assets/img/alipay.png';
+import Metamask from '../../public/assets/img/metamask.png';
+import UnderlineImg from '../../public/assets/img/Vector 4.png'
 
 
 const Partners = () => {
