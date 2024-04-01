@@ -99,8 +99,8 @@ body{
 }
 .analytic{
   background: url('../../public/assets/img/analytic_gradient.png');
-  /* background-position: 50%; */
-  background-size: cover; 
+  background-repeat: no-repeat;
+  background-size: 100%; 
 }
 
 @media screen and (min-width: 300px) and (max-width: 791px){

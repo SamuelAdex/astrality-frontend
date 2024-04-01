@@ -58,10 +58,10 @@ const Register = () => {
                 <div className="">
                     <div className='text-white text-center font-bold mb-5 md:text-[16px] text-[14px]'>{"Already have a account?"}</div>
                     <Button
-                        text={"Create Account"}
+                        text={"Sign In"}
                         btnStyle={'text-white font-bold md:text-[16px] w-full p-4 text-[14px] border-white rounded-[8px] w-[229px]'}
                         type={'outline'}
-                        onBtnClick={()=> router.push('/register')}
+                        onBtnClick={()=> router.push('/login')}
                     />
                 </div>
             </div>
