@@ -17,30 +17,35 @@ const Header = () => {
             name: 'Home',
             icon: Home,
             activeIcon: HomeActive,
+            path: '/'
         },
         {
             id: 2,
             name: 'Map',
             icon: Map,
             activeIcon: Map,
+            path: '/map'
         },
         {
             id: 3,
             name: 'Marketplace',
             icon: Marketplace,
             activeIcon: Marketplace,
+            path: '/marketplace'
         },
         {
             id: 4,
             name: 'Profile',
             icon: User,
             activeIcon: User,
+            path: '/profile'
         },
         {
             id: 5,
             name: 'About us',
             icon: AboutInfo,
             activeIcon: AboutInfo,
+            path: '/'
         },
     ]
   return (
@@ -52,7 +57,7 @@ const Header = () => {
             <div className="menu lg:flex hidden items-center gap-10">
                 {navLinks.map((link, i)=>{
                     return (
-                        <Link key={i} href="#" className='text-[#CECECE] flex items-center gap-2 lg:text-[16px] text-[14px] font-bold'>
+                        <Link key={i} href={link.path} className='text-[#CECECE] flex items-center gap-2 lg:text-[16px] text-[14px] font-bold'>
                             <Image src={link.icon} className='w-[24px] h-[24px]' alt="" />
                             <span>{link.name}</span>
                         </Link>

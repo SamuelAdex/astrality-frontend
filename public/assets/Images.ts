@@ -37,8 +37,24 @@ import Eth from './img/eth.png';
 import Alipay from './img/alipay.png';
 import Metamask from './img/metamask.png';
 import UnderlineImg from './img/Vector 4.png'
+import Google from './img/login-google.png';
+import LoginFacebook from './img/login-facebook.png';
+import ModalBg from './img/modal_bg.png';
+import Stat1 from './img/stat-1.png';
+import Stat2 from './img/stat-2.png';
+import Stat3 from './img/stat-3.png';
+import Stat4 from './img/stat-4.png';
+import Stat5 from './img/stat-5.png';
 
 export {
+    Stat1,
+    Stat2,
+    Stat3,
+    Stat4,
+    Stat5,
+    ModalBg,
+    Google,
+    LoginFacebook,
     Master,
     Klarna,
     ShopPay,

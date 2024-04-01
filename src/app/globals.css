@@ -86,9 +86,21 @@ body{
   background-repeat: no-repeat;
 }
 .auth-gradient{
-  background: url('../assets/img/auth_gradient.png') ;
+  background: url('../assets/img/auth_gradient.png');
+  background-size: cover;
+  background-position-x: 50%;
   display: grid;
   place-items: center;
+}
+.reset-password{
+  background: url('../../public/assets/img/modal_bg.png');
+  background-position: 50%;
+  background-size: cover;
+}
+.analytic{
+  background: url('../../public/assets/img/analytic_gradient.png');
+  /* background-position: 50%; */
+  background-size: cover; 
 }
 
 @media screen and (min-width: 300px) and (max-width: 791px){
