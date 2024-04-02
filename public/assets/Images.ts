@@ -45,8 +45,16 @@ import Stat2 from './img/stat-2.png';
 import Stat3 from './img/stat-3.png';
 import Stat4 from './img/stat-4.png';
 import Stat5 from './img/stat-5.png';
+import ListingBg from './img/listing_img.png'
+import SaleBg from './img/sale_bg.png'
+import SaleBottom from './img/sale_bottom.png';
+
+
 
 export {
+    SaleBottom,
+    SaleBg,
+    ListingBg,
     Stat1,
     Stat2,
     Stat3,

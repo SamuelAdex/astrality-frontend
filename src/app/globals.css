@@ -103,11 +103,71 @@ body{
   background-size: 100%; 
 }
 
+.border-gradient{
+  border: 1px solid #626377;
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
+}
+
+.border-gradient:hover{
+  background: linear-gradient(#000, #000) padding-box,
+              linear-gradient(133.97deg, #4FB1F6 0%, #FB18EE 100%) border-box;
+  border: 1px solid transparent;
+}
+
+.recent-listing{
+  background: url('../../public/assets/img/listing_gradient.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.listing-blur{
+  color: #bdbdbd;
+  /* background: url('../../public/assets/img/listing_blur.png');
+  background-size: cover;
+  background-repeat: no-repeat; */
+  transition: ease-in-out 0.3s;
+  border-radius: 12px;
+}
+.listing-blur .listing-btn{
+  opacity: 30%;
+  transition: ease-in-out 0.3s;
+}
+.listing-blur:hover .listing-btn{
+  opacity: 100%;
+}
+.listing-blur:hover{
+  background: rgba(11, 16, 23, 0.2) padding-box,
+              linear-gradient(133.97deg, #4FB1F6 0%, #FB18EE 100%, 0.3) border-box;
+  border: 3px solid transparent;
+  color: white;
+}
+
+.recent-sales{
+  background: url('../../public/assets/img/listing_gradient.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.recent-rented{
+  background: url('../../public/assets/img/listing_gradient.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.listing{
+  background: url('../../public/assets/img/listing_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media screen and (min-width: 300px) and (max-width: 791px){
   .rewards{
     background-size: 100%;
   }
   .advert{
     background-size: 100%;
+  }
+  .analytic{
+    background-size: cover;
   }
 }

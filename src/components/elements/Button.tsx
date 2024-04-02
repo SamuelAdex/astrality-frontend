@@ -10,7 +10,7 @@ interface btnProps {
   type?: String;
   text?: String;
   onBtnClick?: any;
-  iconName?: String;
+  iconName?: any;
   imgPath?: StaticImageData;
   btnStyle?: String;
   imgStyle?: String;
