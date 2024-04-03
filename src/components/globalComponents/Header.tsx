@@ -5,12 +5,13 @@ import Link from 'next/link';
 import Button from '../elements/Button';
 import { IoIosArrowDown } from "react-icons/io";
 import Image from 'next/image';
-import { useRouter, useSelectedLayoutSegment } from 'next/navigation';
+import { usePathname, useRouter, useSelectedLayoutSegment } from 'next/navigation';
 
 
 const Header = () => {
     const router = useRouter();
     const activeSegment = useSelectedLayoutSegment();
+    const pathname = usePathname();
 
     const navLinks = [
         {
@@ -61,10 +62,11 @@ const Header = () => {
                 <Image src={AstralityLogo2} className='' alt="" />
             </div>
             <div className="menu lg:flex hidden items-center gap-10">
-                {navLinks.map((link, i)=>{
+                {navLinks.map((link: any, i)=>{
+                    const isActive = pathname == link.path;
                     return (
-                        <Link key={i} href={link.path} className={`${activeSegment === link.targetSegment ? 'text-[#4FB1F6]' : 'text-[#CECECE]'} flex items-center gap-2 lg:text-[16px] text-[14px] font-bold`}>
-                            {activeSegment === link.targetSegment ? (
+                        <Link key={i} href={link.path} className={`${isActive ? 'text-[#4FB1F6]' : 'text-[#CECECE]'} flex items-center gap-2 lg:text-[16px] text-[14px] font-bold`}>
+                            {isActive ? (
                                 <Image src={link.activeIcon} className='w-[24px] h-[24px]' alt="" />
                             ) : (<Image src={link.icon} className='w-[24px] h-[24px]' alt="" />)}
                             <span>{link.name}</span>
