@@ -10,7 +10,7 @@ interface TextProps{
 
 const GradientText = ({children, style}: TextProps) => {
   return (
-    <div className={`gradient-text ${style} bg-gradient-to-r from-[#22A1FE] font-bold to-[#FD18EF] inline-block text-transparent bg-clip-text`}>{children}</div>
+    <div className={`gradient-text ${style} bg-gradient-to-r from-[#22A1FE] font-bold to-[#FD18EF] gradient-text inline-block text-transparent bg-clip-text`}>{children}</div>
   )
 }
 

@@ -10,7 +10,7 @@ const Explore = () => {
     <div className='grid place-items-center mt-24'>
         <div className='flex md:flex-row flex-col w-[90%] gap-12'>
             <div className='flex-[1]'>
-                <div className='flex justify-end'>
+                <div className='flex justify-end mb-4'>
                     <GradientText style={"md:text-[35px] text-[20px]"}>WHAT IS ASTRALITY?</GradientText>
                 </div>
                 <p className='text-white text-justify md:text-[18px] text-[16px]'>Step into Astrality, the frontier of the metaverse where infinite astral expanse meet tangible reality. Our platform reimagines digital commerce, fusing real-world brands and NFTs into an interactive marketplace. At Astrality, own and personalize virtual land, immerse in vibrant social encounters, and experience the future of the digital universe, enhanced by AI. Embrace Astrality’s limitless potential and experience where reality converges with the metaverse.</p>

@@ -1,15 +1,16 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import { AboutInfo, AstralityLogo, AstralityLogo2, AstralityLogoSVG, Globe, Home, HomeActive, Map, Marketplace, User } from '../../../public/assets/Images'
+import { AboutInfo, AstralityLogo, AstralityLogo2, AstralityLogoSVG, Globe, Home, HomeActive, Map, Marketplace, MarketplaceActive, User } from '../../../public/assets/Images'
 import Link from 'next/link';
 import Button from '../elements/Button';
 import { IoIosArrowDown } from "react-icons/io";
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSelectedLayoutSegment } from 'next/navigation';
 
 
 const Header = () => {
     const router = useRouter();
+    const activeSegment = useSelectedLayoutSegment();
 
     const navLinks = [
         {
@@ -17,35 +18,40 @@ const Header = () => {
             name: 'Home',
             icon: Home,
             activeIcon: HomeActive,
-            path: '/'
+            path: '/',
+            targetSegment: null
         },
         {
             id: 2,
             name: 'Map',
             icon: Map,
             activeIcon: Map,
-            path: '/map'
+            path: '/map',
+            targetSegment: 'map'
         },
         {
             id: 3,
             name: 'Marketplace',
             icon: Marketplace,
-            activeIcon: Marketplace,
-            path: '/marketplace'
+            activeIcon: MarketplaceActive,
+            path: '/marketplace',
+            targetSegment: 'marketplace'
         },
         {
             id: 4,
             name: 'Profile',
             icon: User,
             activeIcon: User,
-            path: '/profile'
+            path: '/profile',
+            targetSegment: 'profile'
         },
         {
             id: 5,
             name: 'About us',
             icon: AboutInfo,
             activeIcon: AboutInfo,
-            path: '/'
+            path: '/about',
+            targetSegment: 'about'
         },
     ]
   return (
@@ -57,8 +63,10 @@ const Header = () => {
             <div className="menu lg:flex hidden items-center gap-10">
                 {navLinks.map((link, i)=>{
                     return (
-                        <Link key={i} href={link.path} className='text-[#CECECE] flex items-center gap-2 lg:text-[16px] text-[14px] font-bold'>
-                            <Image src={link.icon} className='w-[24px] h-[24px]' alt="" />
+                        <Link key={i} href={link.path} className={`${activeSegment === link.targetSegment ? 'text-[#4FB1F6]' : 'text-[#CECECE]'} flex items-center gap-2 lg:text-[16px] text-[14px] font-bold`}>
+                            {activeSegment === link.targetSegment ? (
+                                <Image src={link.activeIcon} className='w-[24px] h-[24px]' alt="" />
+                            ) : (<Image src={link.icon} className='w-[24px] h-[24px]' alt="" />)}
                             <span>{link.name}</span>
                         </Link>
                     )

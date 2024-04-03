@@ -21,8 +21,36 @@
     text-wrap: balance;
   }
 }
+
+
+@font-face {
+  font-family: Lustra;
+  src: url("../../public/assets/fonts/Fontspring-DEMO-lustrasemibold.otf");
+}
+
+
 body{
   background-color: #000000;
+}
+
+button{
+  font-family: Lustra;
+}
+.hero{
+  font-family: Lustra;
+  text-shadow: 3px 1px 5px rgba(0,0,0,0.35);
+}
+.gradient-text{
+  font-family: Lustra;
+  /* text-shadow: 3px 1px 5px rgba(0,0,0,0.35); */
+}
+.line-text{
+  font-family: Lustra;
+  /* text-shadow: 3px 1px 5px rgba(0,0,0,0.35); */
+}
+.partner h1{
+  font-family: Lustra;
+  /* text-shadow: 3px 1px 5px rgba(0,0,0,0.35); */
 }
 
 .hero{

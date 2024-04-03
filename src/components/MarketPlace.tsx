@@ -12,7 +12,7 @@ const MarketPlace = () => {
         <div className='flex md:flex-row flex-col w-[90%] gap-12 h-full '>
             <div className='flex-[1.3] flex flex-col justify-center md:mt-[25rem] mt-10 p-4 md:bg-gradient-to-r from-black shadow-lg drop-shadow-lg md:shadow-[#000] shadow- to-black'>
                 <div className=''>
-                    <div className='flex justify-end'>
+                    <div className='flex justify-end mb-4'>
                         <GradientText style={"md:text-[35px] text-[20px]"}>MARKETPLACE</GradientText>
                     </div>
                     <p className='text-white text-justify md:text-[18px] text-[16px]'>Discover the marketplace in Astrality, a fusion of real and virtual commerce. Shop for NFTs from real-world brands and experience a new era of shopping. Astrality sets the stage for Web3 commerce, bridging brands and the metaverse. Embark on a new commerce journey with us.</p>

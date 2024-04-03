@@ -12,6 +12,7 @@ import {
     linkedIn,
 } from '../../../public/assets/Images'
 import Button from '../elements/Button'
+import OutlineText from '../elements/OutlineText'
 
 
 const Footer = () => {
@@ -22,7 +23,7 @@ const Footer = () => {
           <div className="flex md:flex-row flex-col items-center gap-20">
             <div className="flex-1">
               <div className="text-white font-extrabold md:text-[40px] text-[28px]">
-                <h1 className='text-gradient-outline'>INFO</h1>
+                <OutlineText>INFO</OutlineText>
               </div>
               <div className="flex items-center gap-7 text-white 2xl:text-[24px] md:text-[20px] text-[14px] mt-5">
                 <Link href={'#'}>FAQ</Link>
@@ -42,7 +43,7 @@ const Footer = () => {
             </div>
             <div className="flex-1 w-full">
               <div className="">
-                <h1 className='text-gradient-outline md:text-[40px] text-[28px] text-white font-extrabold'>NEWSLETTER</h1>
+              <OutlineText>NEWSLETTER</OutlineText>
               </div>
               <div className="flex flex-col md:gap-8 gap-5 w-full mt-4">
                 <input placeholder='Enter your Email' type='text' className='rounded-[6px] bg-[#252F3D] text-[#cecece] p-3 w-full' />

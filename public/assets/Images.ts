@@ -10,7 +10,8 @@ import AstralityLogoSVG from './svg/astrality-logo.svg'
 import Home from './svg/home.svg'
 import HomeActive from './svg/home_active (2).svg'
 import Map from './svg/map-bold.svg';
-import Marketplace from './svg/shop-bold.svg'
+import Marketplace from './svg/shop-bold.svg';
+import MarketplaceActive from './svg/Shop-bold-active.svg'
 import User from './svg/solar_user-bold.svg'
 import AboutInfo from './svg/ic_round-info.svg'
 import Globe from './svg/globe.svg'
@@ -88,6 +89,7 @@ export {
     HomeActive,
     Map,
     Marketplace,
+    MarketplaceActive,
     User,
     AboutInfo,
     Globe,

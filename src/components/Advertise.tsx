@@ -11,13 +11,13 @@ const Advertise = () => {
     <div className='relative w-full mt-[10rem] advert '>
         {/* <Image src={'/assets/img/AST_Brands.png'} width={6304} height={1300} className='' alt='' /> */}
         <div className='flex flex-col items-end gap-24 lg:p-10 p-5 z-20'>
-            <div className='md:w-[40%] w-full mt-[6rem]'>
+            <div className='md:w-[43%] w-full mt-[6rem]'>
                 <div className='mb-4'>
                     <GradientText style={"md:text-[35px] text-[20px]"}>BRANDS AND ASTRALITY</GradientText>
                 </div>
                 <p className='text-white text-justify md:text-[18px] text-[16px]'>Experience branding like never before Astrality. We empower brands by intertwining virtual and augmented reality, crafting unique costumer engagements in the metaverse. Take your brand engagement to new dimensions with Astrality. Explore our platform and redefine the boundaries of your brand.</p>                
             </div>
-            <div className='md:w-[40%] w-full'>
+            <div className='md:w-[43%] w-full'>
                 <div className='mb-4'>
                     <GradientText style={"md:text-[35px] text-[20px]"}>ADVERTISEMENT</GradientText>
                 </div>

@@ -19,9 +19,9 @@ import {
 
 const Partners = () => {
   return (
-    <div className='grid place-items-center md:gap-14 gap-8 mb-[4rem]'>
-        <div className="text- md:text-[44px] font-bold flex flex-col items-center text-[30px] text-white">
-            <h1>PARTNERS</h1>
+    <div className='grid place-items-center md:gap-14 gap-8 mb-[4rem] partner'>
+        <div className="text- md:text-[50px] font-bold flex flex-col items-center text-[30px] text-white">
+            <h1 className=''>PARTNERS</h1>
             <Image src={UnderlineImg} alt='' />
         </div>
         <div className="grid md:grid-cols-5 md:w-[95%] w-full md:p-0 p-5 gap-y-8 grid-cols-2">

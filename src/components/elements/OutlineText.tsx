@@ -10,7 +10,7 @@ interface outlineProps {
 
 const OutlineText = ({children, style}: outlineProps) => {
   return (
-    <h1 className={`text-gradient-outline md:text-[40px] text-[28px] text-white font-extrabold ${style}`}>{children}</h1>
+    <h1 className={`text-gradient-outline md:text-[40px] line-text text-[28px] text-white font-extrabold ${style}`}>{children}</h1>
   )
 }
 
