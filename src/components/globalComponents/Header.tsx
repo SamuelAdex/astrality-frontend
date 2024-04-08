@@ -56,7 +56,7 @@ const Header = () => {
         },
     ]
   return (
-    <header className='grid place-items-center absolute w-full p-5'>
+    <header className='grid place-items-center absolute z-20 w-full p-5'>
         <nav className='flex items-center md:gap-10 justify-between md:w-[98%] w-full md:px-0 px-4'>
             <div className=''>
                 <Image src={AstralityLogo2} className='' alt="" />

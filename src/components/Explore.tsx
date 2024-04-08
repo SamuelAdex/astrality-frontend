@@ -24,12 +24,15 @@ const Explore = () => {
             </div>
             <div className='flex-[1]'>
                 <div className="w-full flex overflow-hidden rounded-[12px]">
-                    <ReactPlayer 
+                    {/* <ReactPlayer 
+                        playing
                         url={"../assets/videos/astrality_city.mp4"}
-                        controls={true}
                         width='100%'
                         className="md:h-[593px] h-[350px]"
-                    />
+                    /> */}
+                    <video autoPlay muted loop className="video">
+                        <source src={"../assets/videos/astrality_city.mp4"} type="video/mp4" />
+                    </video>
                 </div>                    
             </div>
         </div>
