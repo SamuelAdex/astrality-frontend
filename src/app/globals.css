@@ -75,11 +75,15 @@ button{
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .marketplace{
-  background: url('../assets/img/marketplace_bg.png');
+  background: linear-gradient(255.77deg, rgba(0, 0, 0, 0) 83.16%, rgba(251, 24, 238, 0.4) 100%, rgba(35, 161, 254, 0.4) 0%, rgba(0, 0, 0, 0) 19.76%);
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
+}
+.marketplace video::after{
+  background-color: red;
 }
 /* .market_gradient{
   background: linear-gradient(291.95deg, #000000 0.57%, rgba(0, 0, 0, 0) 73.9%), url('./assets/svg/AST_MarketPlace.svg') ;
@@ -197,11 +201,16 @@ button{
 @media screen and (min-width: 300px) and (max-width: 791px){
   .rewards{
     background-size: 100%;
+    background: none;
   }
   .advert{
     background-size: 100%;
+    background: none;
   }
   .analytic{
     background-size: cover;
+  }
+  .buy-now{
+    background: none;
   }
 }

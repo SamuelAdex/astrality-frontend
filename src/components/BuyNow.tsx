@@ -5,9 +5,14 @@ import Button from './elements/Button'
 
 const BuyNow = () => {
   return (
-    <div className='relative w-full mt-28'>
-        <div className='buy-now lg:w-[1040px] w-full h-[600px] flex flex-col items-end justify-end lg:p-2 p-8 bg-[30%]'>
-            <div className='md:w-[35%] w-full md:absolute md:right-[50px]'>
+    <div className='relative w-full mt-28 overflow-hidden buy-now bg-[30%]'>
+        <div className='lg:w-[1040px] w-full h-[600px] flex flex-col items-end justify-end lg:p-2 p-8 bg-[30%]'>
+            <div className='absolute top-0 overflow-hidden left-0'>
+                <video autoPlay muted loop className="video min-w-[100%] min-h-[100%] object-cover">
+                    <source src={"../assets/videos/AST_Chip_v2_F.mp4"} type="video/mp4" />
+                </video>
+            </div>
+            <div className='md:w-[35%] w-full absolute md:right-[50px] right-0 lg:p-2 p-8'>
                 <div className='mb-4'>
                     <GradientText style={"md:text-[35px] text-[20px]"}>DIGITAL LAND</GradientText>
                 </div>
