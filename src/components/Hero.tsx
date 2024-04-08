@@ -9,9 +9,6 @@ const Hero = () => {
               <source src={"../assets/videos/AST_City with Words_v1.mp4"} type="video/mp4" />
           </video>
         </div>
-        {/* <div className='z-[2]'>
-          <h1 className='text-center lg:text-[60px] text-sh text-[30px] md:leading-[75px] leading-[40px] font-bold uppercase'>Dive into Astrality,<br /> A fusion of limitless potential and tangible reality</h1>
-        </div> */}
     </div>
   )
 }
