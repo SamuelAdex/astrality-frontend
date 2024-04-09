@@ -7,15 +7,15 @@ import Image from 'next/image'
 
 const MarketPlace = () => {
   return (
-    <div className='marketplace grid place-items-center lg:mt-[2rem] mt-10 h-[800px] relative overflow-hidden'>
+    <div className='marketplace grid place-items-center lg:mt-[2rem] mt-10 md:h-[800px] h-full relative overflow-hidden'>
         <div className='absolute overflow-hidden md:top-[10%] -z-5 md:bottom-none bottom-0 md:-right-20 video-container'>
-            <video autoPlay muted loop className="video md:max-w-[1000px] max-w-[600px] object-center">
+            <video autoPlay muted loop className="video md:max-w-[1000px] w-full max-w-[600px] object-center">
                 <source src={"../assets/videos/AST_MarketPlace.mp4"} type="video/mp4" />
             </video>
         </div>
         {/* <img src={market_gradient} className='absolute w-full h-[800px]' alt="" /> */}
-        <div className='flex md:flex-row flex-col w-[90%] gap-12 h-full '>
-            <div className='flex-[1.3] flex flex-col justify-center md:mt-[25rem] mt-10 p-4 drop-shadow-lg'>
+        <div className='flex md:flex-row flex-col md:w-[90%] w-full gap-12 h-full '>
+            <div className='md:w-[40%] w-full flex flex-col justify-center md:mt-[25rem] mt-10 md:p-4 p-6 drop-shadow-lg'>
                 <div className=''>
                     <div className='flex justify-end mb-4'>
                         <GradientText style={"md:text-[35px] text-[20px]"}>MARKETPLACE</GradientText>
@@ -30,7 +30,7 @@ const MarketPlace = () => {
                 </div>
             </div>
             <div className='flex-[2] market_gradient'>
-                <Image src={MarketCart} className='absolute md:-right-5 -right-2 top-[9.2rem] h-[900px] md:w-[950px] -z-10' alt="" />
+                {/* <Image src={MarketCart} className='absolute md:-right-5 -right-2 top-[9.2rem] h-[900px] md:w-[950px] -z-10' alt="" /> */}
             </div>
         </div>
     </div>

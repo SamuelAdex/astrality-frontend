@@ -18,7 +18,7 @@ import OutlineText from '../elements/OutlineText'
 const Footer = () => {
   return (
     <div className='grid place-items-center'>
-      <div className="md:w-[95%] w-full bg-[#111520]">
+      <div className="lg:w-[95%] w-full bg-[#111520]">
         <div className='md:p-16 p-6'>
           <div className="flex md:flex-row flex-col items-center gap-20">
             <div className="flex-1">

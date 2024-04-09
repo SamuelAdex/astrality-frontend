@@ -7,7 +7,7 @@ const BuyNow = () => {
   return (
     <div className='relative w-full mt-28 overflow-hidden buy-now bg-[30%]'>
         <div className='lg:w-[1040px] w-full h-[600px] flex flex-col items-end justify-end lg:p-2 p-8 bg-[30%]'>
-            <div className='absolute top-0 overflow-hidden left-0'>
+            <div className='absolute top-0 overflow-hidden md:left-0 left-[-40%]'>
                 <video autoPlay muted loop className="video min-w-[100%] min-h-[100%] object-cover">
                     <source src={"../assets/videos/AST_Chip_v2_F.mp4"} type="video/mp4" />
                 </video>

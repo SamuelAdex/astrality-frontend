@@ -26,8 +26,8 @@ const Page = () => {
             />
         </div>
         <div className='md:px-16 m-auto m-[0px] rounded-[12px] px-5 py-[2.5rem] mb-20 listing'>
-            <div className="flex justify-between items-center">
-                <div className="flex md:flex-row flex-col md:items-center md:gap-10 gap-5">
+            <div className="flex justify-between md:flex-row flex-col md:items-center">
+                <div className="flex md:flex-row flex-col md:items-center md:gap-10 gap-4">
                     <OutlineText>RECENT LISTINGS</OutlineText>
                     <div className='flex items-center gap-3'>
                         <span className='p-2 border-gradient hover:text-white active:text-white text-[#626377] h-[48px] md:text-[16px] text-[14px] grid place-items-center cursor-pointer'>ALL</span>               
@@ -44,11 +44,11 @@ const Page = () => {
                     />
                 </div> */}
             </div>
-            <div className="mt-10 grid md:grid-cols-4 sm5:grid-cols-2 grid-cols-1 gap-4">
+            <div className="mt-10 grid lg:grid-cols-4 md;grid-col-3 sm:grid-cols-2 grid-cols-1 gap-4">
                 {[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20].map((_, i)=>(
                     <div key={i} className="listing-blur border-gradient p-6 backdrop-blur-md bg-[rgba(0,0,0,0.7)] flex flex-col gap-4">
-                        <div className="">
-                            <Image src={ListingBg} alt="" />
+                        <div className="flex justify-center">
+                            <Image src={ListingBg} alt="" className='w-full' />
                         </div>
                         <div className="flex justify-between">
                             <div className="flex flex-col gap-1">

@@ -10,9 +10,9 @@ const Advertise = () => {
   return (
     <div className='relative w-full mt-[10rem] advert overflow-hidden'>
         <div className='lg:w-[1080px] w-full h-[800px]'>
-            <div className='w-[100%] md:h-[100%] absolute -top-[30%] md:-left-[80%] -z-5'>
-                <video autoPlay muted loop className="video md:min-w-[150%] min-h-[100%] object-cover">
-                    <source src={"../assets/videos/AST_Logo&Brands.mp4"} type="video/mp4" />
+            <div className='w-[100%] h-[100%] absolute -top-[30%] md:left-[-80%] left-0 -z-5'>
+                <video autoPlay muted loop className="video md:min-w-[150%] w-[100%] min-h-[100%] object-cover">
+                    <source src={"../assets/videos/AST_Logo&Brands_1.mp4"} type="video/mp4" />
                 </video>
             </div>
             {/* <Image src={'/assets/img/AST_Brands.png'} width={6304} height={1300} className='' alt='' /> */}

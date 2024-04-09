@@ -58,9 +58,9 @@ const Header = () => {
   return (
     <header className='grid place-items-center absolute z-20 w-full p-5'>
         <nav className='flex items-center md:gap-10 justify-between md:w-[98%] w-full md:px-0 px-4'>
-            <div className=''>
+            <Link href={"/"} className=''>
                 <Image src={AstralityLogo2} className='' alt="" />
-            </div>
+            </Link>
             <div className="menu lg:flex hidden items-center gap-10">
                 {navLinks.map((link: any, i)=>{
                     const isActive = pathname == link.path;

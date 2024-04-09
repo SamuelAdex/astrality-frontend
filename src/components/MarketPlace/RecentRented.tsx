@@ -11,8 +11,8 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 const RecentRented = () => {
   return (
     <div className='md:px-12 md:w-[95%] w-full m-auto m-[0px] rounded-[12px] px-5 py-[2.5rem] mb-20 recent-rented'>
-        <div className="flex justify-between items-center">
-            <div className="flex items-center gap-10">
+        <div className="flex justify-between md:flex-row flex-col md:items-center">
+            <div className="flex md:flex-row flex-col md:items-center gap-10">
                 <OutlineText>RECENT RENTED</OutlineText>
                 {/* <div className='flex items-center gap-3'>
                     <span className='p-2 border-gradient hover:text-white active:text-white text-[#626377] h-[48px] md:text-[16px] text-[14px] grid place-items-center cursor-pointer'>ALL</span>               
@@ -23,17 +23,18 @@ const RecentRented = () => {
             <div className="">
                 <Button
                     text={"See All"}
-                    btnStyle={"border-white text-white flex-row-reverse font-bold md:text-[16px] px-4 text-[14px]"}
+                    btnStyle={"border-white w-full md:mt-0 mt-4 text-white flex-row-reverse font-bold md:text-[16px] p-4 text-[14px]"}
                     type={"outline"}
                     iconName={<MdOutlineKeyboardDoubleArrowRight fontSize={"1.2rem"} color={"#fff"} />}
                 />
             </div>
         </div>
-        <div className="mt-10 grid md:grid-cols-4 grid-cols-2 gap-4">
+        <div className="mt-10 grid lg:grid-cols-4 md:grid-cols-3
+         sm:grid-cols-2 grid-cols-1 gap-4">
             {[1,2,3,4,5,6,7,8].map((_, i)=>(
                 <div key={i} className="listing-blur border-gradient p-6 backdrop-blur-md bg-[rgba(0,0,0,0.7)] flex flex-col gap-4">
-                    <div className="">
-                        <Image src={SaleBg} alt="" />
+                    <div className="flex justify-center">
+                        <Image src={SaleBg} alt="" className='w-full' />
                     </div>
                     <div className="flex justify-between">
                         <div className="flex flex-col gap-1">

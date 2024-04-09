@@ -44,11 +44,11 @@ const Page = () => {
                     />
                 </div> */}
             </div>
-            <div className="mt-10 grid md:grid-cols-4 sm5:grid-cols-2 grid-cols-1 gap-4">
+            <div className="mt-10 grid md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4">
                 {[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20].map((_, i)=>(
                     <div key={i} className="listing-blur border-gradient p-6 backdrop-blur-md bg-[rgba(0,0,0,0.7)] flex flex-col gap-4">
-                        <div className="">
-                            <Image src={SaleBg} alt="" />
+                        <div className="flex justify-center">
+                            <Image src={SaleBg} alt="" className='w-full' />
                         </div>
                         <div className="flex justify-between">
                             <div className="flex flex-col gap-1">

@@ -80,8 +80,11 @@ button{
   background-position: 50%;
   background-repeat: no-repeat;
 }
+.market_gradient{
+  background: linear-gradient(90deg #000000, #000000);
+}
 .marketplace video::after{
-  background-color: red;
+  /* background-color: red; */
 }
 /* .market_gradient{
   background: linear-gradient(291.95deg, #000000 0.57%, rgba(0, 0, 0, 0) 73.9%), url('./assets/svg/AST_MarketPlace.svg') ;
@@ -196,7 +199,7 @@ button{
   background-size: cover;
 }
 
-@media screen and (min-width: 300px) and (max-width: 791px){
+@media screen and (min-width: 300px) and (max-width: 800px){
   .rewards{
     background-size: 100%;
     background: none;
@@ -210,5 +213,8 @@ button{
   }
   .buy-now{
     background: none;
+  }
+  .marketplace{
+    /* background: none; */
   }
 }
