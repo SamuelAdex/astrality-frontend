@@ -19,7 +19,7 @@ const Page = () => {
             <Button text={"Add Wallet"} iconName={<MdAdd fontSize={"1.2rem"} />} btnStyle={"text-white flex-[1] p-3 w-full"} />
         </div>
 
-        <div className="md:mt-4 mt-4 w-full">
+        <div className="md:mt-10 mt-4 w-full">
             <table className='w-full tbl'>
                 <thead className='text-white text-left md:text-[14px] text-[12px] font-bold'>
                     <th>Wallet ID</th>
