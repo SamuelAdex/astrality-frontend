@@ -1,7 +1,7 @@
 "use client"
 
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { AboutInfo, AstralityLogo, AstralityLogo2, AstralityLogoSVG, Globe, Home, HomeActive, Map, Marketplace, MarketplaceActive, User } from '../../../public/assets/Images'
 import { UserActive } from '@/assets/Images';
 import Link from 'next/link';
@@ -15,6 +15,28 @@ const Header = () => {
     const router = useRouter();
     const activeSegment = useSelectedLayoutSegment();
     const pathname = usePathname();
+
+    const [bgColor, setBgColor] = useState(false)
+
+    const changebgColor = ()=>{
+        // console.log(window.scrollY)
+        if(typeof window !== "undefined"){
+            if(window.scrollY >= 60){
+                setBgColor(true)
+            }else{
+                setBgColor(false)
+            }
+        }
+    }
+
+
+    useEffect(() => {
+        changebgColor()
+
+        if(typeof window !== "undefined"){
+            window.addEventListener('scroll', changebgColor)
+        }
+    }, [])
 
     const navLinks = [
         {
@@ -59,7 +81,7 @@ const Header = () => {
         },
     ]
   return (
-    <header className='grid place-items-center fixed top-0 z-30 w-full p-5'>
+    <header className={`grid place-items-center ${bgColor && 'backdrop-blur-sm bg-[rgba(0,0,0,0.5)]'} fixed top-0 z-30 w-full p-5`}>
         <nav className='flex items-center md:gap-10 justify-between md:w-[98%] w-full md:px-0 px-4'>
             <Link href={"/"} className=''>
                 <Image src={AstralityLogo2} className='' alt="" />
