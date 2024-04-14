@@ -8,6 +8,7 @@ import {ListingBg} from '../../../public/assets/Images'
 import Image from 'next/image';
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 const RecentListing = () => {
     const router = useRouter()
@@ -35,7 +36,7 @@ const RecentListing = () => {
         <div className="mt-10 grid lg:grid-cols-4 md:grid-cols-3
          sm:grid-cols-2 grid-cols-1 gap-4">
             {[1,2,3,4,5,6,7,8].map((_, i)=>(
-                <div key={i} className="listing-blur border-gradient p-6 backdrop-blur-md bg-[rgba(0,0,0,0.7)] flex flex-col gap-4">
+                <Link href={"marketplace/asset/16"} key={i} className="listing-blur border-gradient p-6 backdrop-blur-md bg-[rgba(0,0,0,0.7)] flex flex-col gap-4">
                     <div className="flex justify-center">
                         <Image src={ListingBg} className='w-full' alt="" />
                     </div>
@@ -55,7 +56,7 @@ const RecentListing = () => {
                             btnStyle={"text-white w-full font-extrabold md:text-[20px] text-[16px]"}
                         />
                     </div>
-                </div>
+                </Link>
             ))}
         </div>
     </div>

@@ -7,6 +7,7 @@ import Button from '../elements/Button';
 import {SaleBg} from '../../../public/assets/Images'
 import Image from 'next/image';
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+import Link from 'next/link';
 
 const RecentRented = () => {
   return (
@@ -32,7 +33,7 @@ const RecentRented = () => {
         <div className="mt-10 grid lg:grid-cols-4 md:grid-cols-3
          sm:grid-cols-2 grid-cols-1 gap-4">
             {[1,2,3,4,5,6,7,8].map((_, i)=>(
-                <div key={i} className="listing-blur border-gradient p-6 backdrop-blur-md bg-[rgba(0,0,0,0.7)] flex flex-col gap-4">
+                <Link href={"marketplace/asset/88"} key={i} className="listing-blur border-gradient p-6 backdrop-blur-md bg-[rgba(0,0,0,0.7)] flex flex-col gap-4">
                     <div className="flex justify-center">
                         <Image src={SaleBg} alt="" className='w-full' />
                     </div>
@@ -47,7 +48,7 @@ const RecentRented = () => {
                             <span className="2xl:text-[24px] md:text-[20px] text-[18px] font-extrabold">1,200 $</span>
                         </div>
                     </div>
-                </div>
+                </Link>
             ))}
         </div>
     </div>

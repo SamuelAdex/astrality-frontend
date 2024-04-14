@@ -13,7 +13,7 @@ import { SaleBottom } from '../../../public/assets/Images';
 const Page = () => {
   return (
     <div>
-        <Header />
+        {/* <Header /> */}
         <Analytics />
         <RecentListing />
         <RecentSales />
@@ -24,7 +24,7 @@ const Page = () => {
             alt=''
           />
         </div>
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }

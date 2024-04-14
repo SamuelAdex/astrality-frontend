@@ -33,7 +33,10 @@ body{
   background-color: #000000;
 }
 
-button{
+.btn{
+  font-family: Lustra;
+}
+.font-lustra{
   font-family: Lustra;
 }
 .hero{
@@ -102,6 +105,11 @@ button{
   background-size: 80%;
   background-repeat: no-repeat;
 }
+.asset_overlay{
+  background: url('../assets/svg/3d-illustration_bg.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 
 
 .rewards{
@@ -131,6 +139,13 @@ button{
   display: grid;
   place-items: center;
 }
+
+.gradient_md{
+  background: url('../assets/svg/gradient_bg_md.svg');
+  background-size: cover;
+}
+
+
 .reset-password{
   background: url('../../public/assets/img/modal_bg.png');
   background-position: 50%;
@@ -152,6 +167,95 @@ button{
   background: linear-gradient(#000, #000) padding-box,
               linear-gradient(133.97deg, #4FB1F6 0%, #FB18EE 100%) border-box;
   border: 1px solid transparent;
+}
+.border-gradient-btn{
+  border: 2px solid #626377;
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
+}
+.border-active{
+  background: linear-gradient(#000, #000) padding-box,
+              linear-gradient(133.97deg, #4FB1F6 0%, #FB18EE 100%) border-box;
+  border: 1px solid transparent;
+}
+.active-icon{
+  background: linear-gradient(90deg, #22A1FE 0%, #FD18EF 100%);
+}
+
+.gradient_sidebar{
+  background: url('../assets/svg/sidebar_gradient.svg') center center/cover;
+  background-repeat: no-repeat;
+  /* background-size: 50%;  */
+}
+.profile_gradient{
+  background: url('../assets/svg/profile_gradient.svg') center center/cover;
+  background-repeat: no-repeat;
+  /* background-size: 50%;  */
+}
+.stats_gradient{
+  background: url('../assets/svg/stats_gradient.svg') center center/cover;
+  background-repeat: no-repeat;
+  /* background-size: 50%;  */
+}
+.offers{
+  background: url('../assets/svg/offer_gradient.svg') center center/cover;
+  background-repeat: no-repeat;
+  /* background-size: 50%;  */
+}
+.referral_gradient{
+  background: url('../assets/svg/referral_gradient.svg') center center/cover;
+  background-repeat: no-repeat;
+  /* background-size: 50%;  */
+}
+.money_gradient{
+  background: url('../assets/svg/money_gradient.svg') center center/cover;
+  background-repeat: no-repeat;
+  /* background-size: 50%;  */
+}
+.inventory_gradient{
+  background: url('../assets/svg/inventory_gradient.svg') center center/cover;
+  background-repeat: no-repeat;
+  /* background-size: 50%;  */
+}
+
+
+.overview_gradient{
+  background: url('../assets/svg/overview_gradient.svg') center center/cover;
+  background-repeat: no-repeat;
+  /* background-size: 50%;  */
+}
+.asset_gradient{
+  background: url('../assets/svg/inventory_asset_gradient.svg') center center/cover;
+  background-repeat: no-repeat;
+}
+
+.border-gradient-btn:hover{
+  background: linear-gradient(#fff, #fff) padding-box,
+              linear-gradient(133.97deg, #4FB1F6 0%, #FB18EE 100%) border-box;
+  border: 2px solid transparent;
+}
+
+.tbl tr td{
+  padding: 0.5rem;
+}
+
+.tbl tr:nth-child(2n-1) td{
+  background: #232731;
+}
+.tbl tr:nth-child(2n-1) td:nth-child(1){
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.tbl tr:nth-child(2n-1) td:nth-last-child(1){
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.tbl td {
+  text-align: left;
+}
+.tbl thead th{
+  padding-bottom: 8px;
 }
 
 .recent-listing{

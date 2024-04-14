@@ -1,6 +1,9 @@
+"use client"
+
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { AboutInfo, AstralityLogo, AstralityLogo2, AstralityLogoSVG, Globe, Home, HomeActive, Map, Marketplace, MarketplaceActive, User } from '../../../public/assets/Images'
+import { UserActive } from '@/assets/Images';
 import Link from 'next/link';
 import Button from '../elements/Button';
 import { IoIosArrowDown } from "react-icons/io";
@@ -42,7 +45,7 @@ const Header = () => {
             id: 4,
             name: 'Profile',
             icon: User,
-            activeIcon: User,
+            activeIcon: UserActive,
             path: '/profile',
             targetSegment: 'profile'
         },
@@ -56,7 +59,7 @@ const Header = () => {
         },
     ]
   return (
-    <header className='grid place-items-center absolute z-20 w-full p-5'>
+    <header className='grid place-items-center absolute top-0 z-30 w-full p-5'>
         <nav className='flex items-center md:gap-10 justify-between md:w-[98%] w-full md:px-0 px-4'>
             <Link href={"/"} className=''>
                 <Image src={AstralityLogo2} className='' alt="" />
