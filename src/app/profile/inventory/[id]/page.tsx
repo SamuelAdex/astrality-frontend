@@ -107,7 +107,7 @@ interface RentLandProps {
 }
 
 
-const RentLandPopUp: React.FC = ({onCloseFunc}: RentLandProps)=>{
+const RentLandPopUp: React.FC<RentLandProps> = ({onCloseFunc}: RentLandProps)=>{
     return (
         <>
             <div className="p-10 gradient_md md:w-[620px] w-full bg-[#626377] rounded-[12px]">

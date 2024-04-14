@@ -176,7 +176,7 @@ interface BuyNowProps {
 }
 
 
-const BuyPopUp: React.FC = ({onCloseFunc}: BuyNowProps)=>{
+const BuyPopUp: React.FC<BuyNowProps> = ({onCloseFunc}: BuyNowProps)=>{
     return (
         <>
             <div className="p-10 gradient_md md:w-[620px] w-full bg-[#626377] rounded-[12px]">
