@@ -60,9 +60,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
-        {
-          typeof window !== "undefined" && !window.location.href.includes("profile") ? <Footer /> : <Footer />
-        }
+        <Footer />
       </body>
     </html>
   );
