@@ -18,7 +18,7 @@ import Footer from '@/components/globalComponents/Footer';
 const Home = () => {
   return (
     <div className="home-container">
-        {/* <Header /> */}
+        <Header />
         <Hero />
         <Join />
         <Explore />
@@ -40,7 +40,7 @@ const Home = () => {
         </div>
         <Reward />
         <Partners />
-        {/* <Footer /> */}
+        <Footer />
     </div>
   )
 }

@@ -64,8 +64,8 @@ export default function DashboardLayout({
         <Header />
         <div className="mt-[6rem]">
           <Sidebar />
-          <main className="">
-            <div className="lg:ml-[21rem] md:p-8 p-4">
+          <main className="lg:ml-[21rem]">
+            <div className="md:p-8 p-4">
               {children}
             </div>
             <div className='md:my-12 mb-14'>
@@ -74,6 +74,7 @@ export default function DashboardLayout({
                 alt=''
               />
             </div>
+            <Footer />
           </main>
         </div>
       </body>

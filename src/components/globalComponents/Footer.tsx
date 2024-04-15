@@ -27,7 +27,7 @@ const Footer = () => {
               <div className="text-white font-extrabold md:text-[40px] text-[28px]">
                 <OutlineText>INFO</OutlineText>
               </div>
-              <div className="flex items-center gap-7 text-white 2xl:text-[24px] md:text-[20px] text-[14px] mt-5">
+              <div className="flex items-center gap-5 text-white 2xl:text-[24px] md:text-[16px] text-[14px] mt-5">
                 <Link href={'#'}>FAQ</Link>
                 <Link href={'#'}>Terms of use</Link>
                 <Link href={'#'}>Privacy Policy</Link>

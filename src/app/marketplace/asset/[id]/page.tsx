@@ -29,6 +29,7 @@ import { SaleBottom } from '../../../../../public/assets/Images';
 import LandActivity from '@/components/MarketPlace/LandActivity';
 import Modal from '@/components/elements/Modal';
 import Header from '@/components/globalComponents/Header';
+import Footer from '@/components/globalComponents/Footer';
 
 const Page = () => {
     const router = useRouter();
@@ -123,6 +124,7 @@ const Page = () => {
                 <BuyPopUp onCloseFunc={()=> setIsModal(false)} />
             </Modal>
         )}
+        <Footer />
     </div>
   )
 }
